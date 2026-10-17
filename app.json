@@ -1,25 +1,46 @@
 {
   "expo": {
-    "name": "reverse-game",
-    "slug": "reverse-game",
+    "name": "Reverse Words",
+    "slug": "reverse-words",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/icon.png"
+    },
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.reversewords.game",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Reverse Words uses your microphone only when you tap Record. Recordings stay on this phone and are cleared after each round.",
+          "enableBackgroundRecording": false,
+          "enableBackgroundPlayback": false
+        }
+      ],
+      "expo-localization",
+      "expo-status-bar",
+      "expo-asset",
+      "expo-font"
+    ],
+    "platforms": [
+      "ios",
+      "web"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "abb334ff-d1c9-45fd-9ebf-77ae5b15ce1e"
+      }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "owner": "walidhamdy77"
   }
 }

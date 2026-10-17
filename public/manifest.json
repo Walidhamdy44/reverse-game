@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "Reverse Words",
+  "short_name": "Reverse Words",
+  "description": "A two-player backwards-audio word game.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#F4F0E7",
+  "background_color": "#F4F0E7",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

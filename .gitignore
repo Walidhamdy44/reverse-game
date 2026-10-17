@@ -22,6 +22,7 @@ expo-env.d.ts
 .metro-health-check*
 
 # debug
+.playwright-mcp/
 npm-debug.*
 yarn-debug.*
 yarn-error.*
